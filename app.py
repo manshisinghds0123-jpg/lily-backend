@@ -16,7 +16,7 @@ CORS(app)
 
 DB_PATH = os.getenv("DB_PATH", "lily.db")
 API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
 client = genai.Client(api_key=API_KEY.strip()) if API_KEY else None
 
